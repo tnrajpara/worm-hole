@@ -85,7 +85,7 @@ for (let i = 0; i < numOfBoxes; i++) {
 
 function updateCamera(t) {
   const time = t * 0.1;
-  const loopTime = 4 * 1000;
+  const loopTime = 3 * 1000;
   const p = (time % loopTime) / loopTime;
   const pos = tubeGeo.parameters.path.getPointAt(p);
   const loopAt = tubeGeo.parameters.path.getPointAt((p + 0.03) % 1);
